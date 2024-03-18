@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishes</title>
+</head>
+<style>
+    h1{
+        color: red;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 400;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1  id="wishes" ></h1>
+    </div>
+   
+</body>
+<script>
+    let myDate = new Date();
+    let hour = myDate.getHours();
+    
+    let wish;
+
+    if(hour < 11)
+    wish = 'Hii Dear Good Morning';
+
+else if(hour >= 11 && hour <= 17)
+wish = 'Hii Dear Good Afternoon';
+
+else 
+wish = 'Hii Dear Good Evening';
+
+document.getElementById('wishes').innerHTML = wish ;
+</script>
+</html>
